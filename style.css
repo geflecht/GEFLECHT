@@ -23,6 +23,8 @@ nav {
     border: 0;
     vertical-align: baseline;
     box-sizing: border-box;
+
+    text-decoration: none!important;
 }
 
 p {
@@ -108,7 +110,6 @@ body {
 .element {
     height: 41px;
     width: 100%;
-    /*padding-top: 9px;*/
 }
 
 .row {
@@ -147,22 +148,23 @@ body {
     align-content: center;
 }
 
-.altgrid {
+.container {
     display: flex;
-    flex-flow: row wrap;
-    flex-grow: 0;
-    flex-shrink: 0;
-    align-items: flex-start;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+}
+
+.thediv {
+    width: 100%;
 }
 
 .blur {
     filter: blur(4px);
 }
 
-.padding-top {
-    padding-top: 9px;
+.margin-bottom {
+    margin-bottom: 16px;
 }
 
 .padding-text {
