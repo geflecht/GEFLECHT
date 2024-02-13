@@ -39,6 +39,10 @@ var gaesteliste = [
     "LENNART SCHRÖDER"
 ];
 
+document.getElementById("name").addEventListener("input", function() {
+    checkName()
+});
+
 function checkName() {
     var name = document.getElementById("name").value;
     
