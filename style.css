@@ -34,11 +34,7 @@ p {
 
 html {
     background-color: white;
-    scroll-behavior: auto;
-    overflow: auto;
-}
-
-body {
+    scroll-behavior: smooth;
     overflow: auto;
 }
 
