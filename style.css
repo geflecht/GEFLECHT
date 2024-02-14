@@ -35,7 +35,6 @@ p {
 html {
     background-color: white;
     scroll-behavior: smooth;
-    overflow: auto;
 }
 
 input {
@@ -59,7 +58,7 @@ input {
     src: url(Medium.woff);
 }
 
-@media screen and (min-height: 740px) {
+@media screen and (max-height: 740px) {
 
     html,
     body {
