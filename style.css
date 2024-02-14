@@ -58,20 +58,9 @@ input {
     src: url(Medium.woff);
 }
 
-@media screen and (max-width: 800px) {
-
-    html,
-    body {
-      position: fixed;
-      height: 100%;
-      width: 100%;
-      overflow: auto;
-    }
-}
-
 * {
     font-family: 'r', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 14px!important;
     color: black;
     text-transform: uppercase;
     letter-spacing: 0.03em;
