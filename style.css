@@ -34,7 +34,12 @@ p {
 
 html {
     background-color: white;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    overflow: auto;
+}
+
+body {
+    overflow: auto;
 }
 
 input {
@@ -56,6 +61,17 @@ input {
 @font-face {
     font-family: 'm';
     src: url(Medium.woff);
+}
+
+@media screen and (min-height: 740px) {
+
+    html,
+    body {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
 }
 
 * {
