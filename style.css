@@ -1,4 +1,4 @@
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 800px) {
 
     html,
     body {
@@ -60,7 +60,7 @@ input {
     outline: none;
 }
 
-@media (orientation: landscape) {
+@media mobile (orientation: landscape) {
     #exception {
         border-bottom: none;
     }
