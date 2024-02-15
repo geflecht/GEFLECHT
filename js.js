@@ -63,22 +63,6 @@ function checkName() {
     document.getElementById("output").innerHTML = output;
 }
 
-// Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
 // Prevents iOS/iPhone from zooming on imput
 const addMaximumScaleToMetaViewport = () => {
     const el = document.querySelector('meta[name=viewport]');
