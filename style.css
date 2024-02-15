@@ -60,12 +60,6 @@ input {
     outline: none;
 }
 
-@media mobile (orientation: landscape) {
-    #exception {
-        border-bottom: none;
-    }
-}
-
 @font-face {
     font-family: 'r';
     src: url(Regular.woff);
@@ -167,7 +161,6 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
 .thediv {
