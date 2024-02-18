@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>EINLADUNG</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://emojifavicon.dev/favicons/1f54a.ico" />
 </head>
 <body class="snappable">
     <header class="header black border-btm">
@@ -17,18 +18,17 @@
     </header>
    
     <div class="media snap" style="padding-top: 41px;">
-        <div class="padding-details border-btm">
-            <div>
-                <p class="medium-font center-text">
-                    GÄSTELISTE EINTRAG PRÜFEN
+        <div>
+            <div class="border-btm">
+                <p class="medium-font medium-font center grid element" style="margin-bottom: 0;">
+                    GÄSTELISTE
                 </p>
             </div>
-            <div class="margin-bottom">
-            
-                <input class="border-top border-btm" oninput="this.value = this.value.toUpperCase()" type="text" id="name" placeholder="WIE LAUTET IHR NAME?" onkeypress="if(event.keyCode === 13) checkName()">
-            
+            <div class="padding-details" style="padding-bottom: 0;">
+                <a>DURCHSUCHEN NACH:</a>
+                <input class=" border-btm" oninput="this.value = this.value.toUpperCase()" type="text" id="name" placeholder="GEBEN SIE IHREN NAMEN EIN" onkeypress="if(event.keyCode === 13) checkName()">
             </div>
-            <div>
+            <div class="padding-details">
                 <p id="output" style="margin-bottom: 0;"></p>
             </div>
         </div>
