@@ -221,3 +221,23 @@ input {
 .topleft:hover .title {
     display: none;
 }
+
+/* --------- EXPERIMENTAL --------- */
+.flex-container {
+    height: 100%;
+    display: flex;
+    
+    justify-content: center; 
+    align-items: stretch;
+
+    background-color: transparent;
+    
+    padding: 0px;
+    gap: 0px;
+
+}
+
+.flex-container > div{
+    background: transparent;
+    padding: 20px;
+}
