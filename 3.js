@@ -119,12 +119,12 @@ window.addEventListener('wheel', function(event) {
 
 let startY;
 
-window.addEventListener('touchstart', function(event) {
+document.getElementById('swipeArea').addEventListener('touchstart', function(event) {
   // Get the initial touch position
   startY = event.touches[0].clientY;
 }, { passive: true });
 
-window.addEventListener('touchmove', function(event) {
+document.getElementById('swipeArea').addEventListener('touchmove', function(event) {
   // Calculate the distance moved
   let deltaY = event.touches[0].clientY - startY;
 
