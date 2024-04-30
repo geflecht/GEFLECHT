@@ -85,6 +85,38 @@ if (checkIsIOS()) {
     disableIosTextFieldZoom();
 }
 
+//TEST TEST TEST TEST
+//------------------------------------------------------------------------------------------
+
+document.getElementById("test").addEventListener("click", function() {
+    
+    const pruefe = document.querySelector(".footer");
+    var curtain = document.getElementById('id-curtain');
+
+    if (pruefe.classList.contains('open')) {
+        
+        curtain.style.opacity = '0';
+        
+        removeSpaceForMenu();
+        hideMenu()
+        closeA();
+        closeB();
+        closeImpPP();
+
+    } else {
+
+        curtain.style.opacity = '1';
+        
+        addSpaceForMenu();
+        showMenu();
+        closeA();
+        closeB();
+        closeImpPP();
+
+    }
+
+});
+
 //wheel event listener
 //------------------------------------------------------------------------------------------
 
