@@ -72,8 +72,8 @@ html {
 * {
     /*overflow: hidden;*/
     font-family: 'r', Arial, Helvetica, sans-serif;
-    line-height: 120%;
-    font-size: 14px!important;
+    line-height: 1;
+    font-size: 13px!important;
     color: var(--w-color);
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -83,13 +83,14 @@ html {
 
 :root {
     --bg-color: black;
-    --w-color: #e6e6e6;
+    --w-color: white;
+    --border-color: rgb(69, 69, 69);
 
-    --space-lr-line: 18px;
-    --space-lr: 0px;
+    --space-lr-line: 0px;
+    --space-lr: 18px;
     --space-tb: 9px 0px;
 
-    --bar: 39px;
+    --bar: 30px;
     --main-h: calc(100svh - (var(--bar) + var(--imagecaption-h)));
     /*--main-h2: calc(100svh - var(--bar-4));*/
     --footer-h: calc(var(--bar) * 3);
@@ -106,6 +107,22 @@ html {
 }
 
 /* ------------------------------------ HEADER */
+
+.index {
+    z-index: 999;
+}
+
+.alp {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(0, 255, 255, 0.089);
+    top: 0px;
+    left: 0px;
+    height: 100svh;
+    width: 100%;
+    overflow: hidden;
+}
 
 .header {
     position: fixed;
@@ -163,15 +180,15 @@ footer.open {
 
 
 .outer-div {
-    border-bottom: 1px solid var(--w-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .outer-div.closed {
-    border-bottom: 0px solid var(--w-color);
+    border-bottom: 0px solid var(--border-color);
 }
 
 .inner-div {
-    height: calc(var(--cptn-1) - 18px);
+    height: calc(var(--cptn-1) - 17px);
     margin-top: 9px;
     margin-bottom: 9px;
     overflow: auto;
@@ -190,15 +207,15 @@ footer.open {
 
 
 .outer-div-2 {
-    border-bottom: 1px solid var(--w-color);  
+    border-bottom: 1px solid var(--border-color);  
 }
 
 .outer-div-2.closed {
-    border-bottom: 0px solid var(--w-color);
+    border-bottom: 0px solid var(--border-color);
 }
 
 .inner-div-2 {
-    height: calc(var(--cptn-1) - 18px);
+    height: calc(var(--cptn-1) - 17px);
     margin-top: 9px;
     margin-bottom: 9px;
     overflow: auto;
@@ -217,15 +234,15 @@ footer.open {
 
 
 .imp-pp-outer-div {
-    border-top: 1px solid var(--w-color);  
+    border-top: 1px solid var(--border-color);  
 }
 
 .imp-pp-outer-div.closed {
-    border-top: 0px solid var(--w-color);
+    border-top: 0px solid var(--border-color);
 }
 
 .imp-pp-inner-div {
-    height: calc(var(--imp-pp-hh) - 19px);
+    height: calc(var(--imp-pp-hh) - 18px);
     margin-top: 9px;
     margin-bottom: 9px;
     overflow: auto;
@@ -333,11 +350,11 @@ footer.open {
 }
 
 .border-btm {
-    border-bottom: 1px solid var(--w-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .border-top {
-    border-top: 1px solid var(--w-color);
+    border-top: 1px solid var(--border-color);
 }
 
 .medium-font {
@@ -503,8 +520,20 @@ img {
 }
 
 @media screen and (min-width: 1500px) {
-    .space-lr-line {
-        width: calc(100% - 36px);
-        margin: 0 auto;
-    }
+   
 }
+
+
+
+/*
+GOOD BACKDROP FILTER
+
+-webkit-backdrop-filter: blur(30px);
+backdrop-filter: blur(30px);
+background-color: rgba(255,255,255,.04);
+border: 1px solid #323234; 
+
+
+backdrop-filter: blur(3rem);
+background-color: rgba(225, 225, 225, 0.5);
+*/
